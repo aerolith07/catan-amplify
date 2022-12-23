@@ -2,8 +2,8 @@ import { ApolloProvider } from "@apollo/client";
 import { AppShell } from "@mantine/core";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Dashboard from "../components/organisms/Dashboard";
-import Header from "../components/organisms/Header";
+import Dashboard from "../src/components/organisms/Dashboard";
+import Header from "../src/components/organisms/Header";
 import client from "../utils/apollo";
 
 const Home: NextPage = () => {
