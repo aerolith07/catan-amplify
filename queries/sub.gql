@@ -1,0 +1,18 @@
+subscription gameEvents($gameId: String!) {
+  gameEvents(gameId: $gameId) {
+    id
+    title
+    description
+    players {
+      id
+      name
+      resources {
+        brick
+        wood
+        sheep
+        grain
+        rock
+      }
+    }
+  }
+}

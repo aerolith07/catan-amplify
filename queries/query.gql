@@ -1,0 +1,16 @@
+query getGame($id: String!) {
+  game(id: $id) {
+    id
+    players {
+      id
+      name
+      resources {
+        brick
+        wood
+        sheep
+        grain
+        rock
+      }
+    }
+  }
+}
